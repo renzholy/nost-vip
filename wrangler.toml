@@ -1,5 +1,5 @@
 compatibility_date = "2022-09-20"
-main = "src/index.ts"
+main = "index.ts"
 name = "nost-vip"
 node_compat = true
 usage_model = "bundled"
