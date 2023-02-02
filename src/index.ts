@@ -21,7 +21,7 @@ export default {
           JSON.stringify({ name: { [name]: nip19.decode(name).data } })
         );
       }
-      return new Response(JSON.stringify({}));
+      return new Response(null, { status: 404 });
     }
     return new Response(null, { status: 404 });
   },
