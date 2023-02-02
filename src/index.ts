@@ -2,10 +2,10 @@ import { nip19 } from "nostr-tools";
 
 export default {
   async fetch(request: Request): Promise<Response> {
-    const url = new URL(request.url);
-    const name = url.searchParams.get("name")!;
+    const { pathname, searchParams } = new URL(request.url);
+    const name = searchParams.get("name")!;
     if (
-      url.pathname === "/.well-known/nostr.json" &&
+      pathname === "/.well-known/nostr.json" &&
       typeof name === "string" &&
       name.startsWith("npub")
     ) {
