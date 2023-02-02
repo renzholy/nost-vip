@@ -13,6 +13,9 @@ export default {
         JSON.stringify({ names: { [name]: nip19.decode(name).data } })
       );
     }
+    if (pathname === "/") {
+      return Response.redirect("https://github.com/renzholy/nost-vip", 301);
+    }
     return new Response(null, { status: 404 });
   },
 };
