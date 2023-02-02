@@ -18,7 +18,7 @@ export default {
       }
       if (name.startsWith("npub")) {
         return new Response(
-          JSON.stringify({ name: { [name]: nip19.decode(name).data } })
+          JSON.stringify({ names: { [name]: nip19.decode(name).data } })
         );
       }
       return new Response(null, { status: 404 });
