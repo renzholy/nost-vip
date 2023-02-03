@@ -1,6 +1,6 @@
 # Nostr VIP
 
-You can get a free purple mark by filling 'nip-05 verification' with `{your-public-key}@nost.vip` now!
+You can get a free NIP-05 verified mark by filling 'nip-05 verification' with `{your-public-key}@nost.vip` now!
 
 Follow me: 
 
