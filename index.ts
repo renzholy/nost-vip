@@ -10,7 +10,8 @@ export default {
       name.startsWith("npub")
     ) {
       return new Response(
-        JSON.stringify({ names: { [name]: nip19.decode(name).data } })
+        JSON.stringify({ names: { [name]: nip19.decode(name).data } }),
+        { headers: { "cache-control": "public, max-age=31536000, immutable" } }
       );
     }
     if (pathname === "/") {
