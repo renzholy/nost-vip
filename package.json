@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "wrangler dev",
-    "deploy": "wrangler publish"
+    "build": "wrangler build",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "nostr-tools": "^1.2.1"
